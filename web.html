@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unique Web Page</title>
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      background: linear-gradient(45deg, #00ffe7, #ff00d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffe7, 0 0 20px #ff00d4;
+      }
+      to {
+        text-shadow: 0 0 20px #ff00d4, 0 0 40px #00ffe7;
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: linear-gradient(135deg, #92fe9d, #00c9ff);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Unique Page</h1>
+    <div class="card">
+      <p>This web page is created with creative styling using just HTML and CSS. It uses glowing text effects, glass blur background, and interactive hover animations.</p>
+      <a href="#" class="button">Explore More</a>
+    </div>
+  </div>
+</body>
+</html>
